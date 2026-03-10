@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Elevated Solutions</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100..1000&family=Inter:opsz,wght@14..32,100..900&display=swap"
+        rel="stylesheet">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        section[id] {
+            scroll-margin-top: 100px;
+            /* offset for fixed header */
+        }
+    </style>
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container header-container">
+            <div class="logo">PortFolio</div>
+            <nav class="main-nav">
+                <a href="#technical-skills">Skills</a>
+                <a href="#publications">Publications</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <a href="#" class="btn btn-primary">Get started</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- 1. Hero Section with typewriter text and down arrow button -->
+        <!-- 1. Hero Section with typewriter text, button, and image on the right -->
+        <section class="hero">
+            <div class="container hero-container">
+                <!-- Left column: text content -->
+                <div class="hero-content">
+                    <span class="tagline">About Me</span>
+                    <h1>Amey Pathare </h1>
+                    <h2><span class="highlight">– Data Analyst | Engineer</span></h2>
+                    <div class="typewriter-wrapper">
+                        <p id="typed-output"></p>
+                    </div>
+                </div>
+                <!-- Right column: glass image -->
+                <div class="hero-image glass-image">
+                    <img src="images/Round_Image.png" alt="Hero Image">
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. Skills Section (tags) -->
+        <section class="skills-section">
+            <div class="container">
+                <h2 class="skills-title">Value I Bring</h2>
+                <div class="skills-grid">
+                    <div class="skill-item">Business Acumen</div>
+                    <div class="skill-item">Development</div>
+                    <div class="skill-item">Strategy</div>
+                    <div class="skill-item">Innovation</div>
+                    <div class="skill-item">Craftsmanship</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Full‑width Horizontal Infinite Scroll Carousel (Glass 3D Cards) -->
+        <section id="technical-skills" class="services-scroll full-width">
+            <div class="container">
+                <h2 class="section-title left" style="margin-bottom: 30px;">Technical Skills</h2>
+            </div>
+            <div class="swiper horizontalSwiper">
+                <div class="swiper-wrapper">
+                    <!-- Card 1: SQL -->
+                    <div class="swiper-slide glass-card">
+                        <span class="card-icon" style="background: rgba(240,225,13,0.2);">
+                            <img src="images/SQL.png" alt="SQL">
+                        </span>
+                        <h3>SQL</h3>
+                        <p>Craft queries that unveil insights buried within raw data and Wrangle messy data into
+                            structured formats for smooth analysis.</p>
+                    </div>
+                    <!-- Card 2: Python -->
+                    <div class="swiper-slide glass-card">
+                        <span class="card-icon" style="background: rgba(255,140,96,0.2);">
+                            <img src="images/Python.png" alt="Python">
+                        </span>
+                        <h3>Python</h3>
+                        <p>Tidy messy datasets into clean, structured formats for smooth analysis. Free up your time
+                            with automated data workflows and ensure data accuracy through meticulous cleaning and
+                            validation.</p>
+                    </div>
+                    <!-- Card 3: Power BI -->
+                    <div class="swiper-slide glass-card">
+                        <span class="card-icon" style="background: rgba(48,93,222,0.2);">
+                            <img src="images/PowerBI.png" alt="Power BI">
+                        </span>
+                        <h3>Power BI</h3>
+                        <p>Build interactive reports that tell the story behind the numbers. Share dashboards with ease,
+                            guiding stakeholders towards data‑driven actions. Go beyond surface‑level insights with
+                            in‑depth filters and cross‑sections.</p>
+                    </div>
+                    <!-- Card 4: Excel -->
+                    <div class="swiper-slide glass-card">
+                        <span class="card-icon" style="background: rgba(255,83,84,0.2);">
+                            <img src="images/Excel.png" alt="Excel">
+                        </span>
+                        <h3>Excel</h3>
+                        <p>Transform messy spreadsheets into clean, organized structures for seamless analysis. Powerful
+                            data analysis accessible to everyone, regardless of resources. Design interactive dashboards
+                            for real‑time insights.</p>
+                    </div>
+                    <!-- Card 5: SSAS -->
+                    <div class="swiper-slide glass-card">
+                        <span class="card-icon" style="background: rgba(158,237,82,0.2);">
+                            <img src="images/SSAS.png" alt="SSAS">
+                        </span>
+                        <h3>SSAS</h3>
+                        <p>Automate data refresh processes, freeing up time for deeper analysis. Connect SSAS with other
+                            BI tools and applications for a seamless data ecosystem. Leverage cloud‑based SSAS options
+                            for improved accessibility.</p>
+                    </div>
+                    <!-- Card 6: Oracle -->
+                    <div class="swiper-slide glass-card">
+                        <span class="card-icon" style="background: rgba(240,225,13,0.2);">
+                            <img src="images/Oracle.png" alt="Oracle">
+                        </span>
+                        <h3>Oracle</h3>
+                        <p>Automate data refresh processes in Oracle using SQL scripts and scheduled jobs. Optimize
+                            Oracle queries and indexes to improve performance and efficiency. Connect Oracle with
+                            Tableau for seamless data visualization.</p>
+                    </div>
+                    <!-- Card 7: BigQuery -->
+                    <div class="swiper-slide glass-card">
+                        <span class="card-icon" style="background: rgba(255,140,96,0.2);">
+                            <img src="images/BigQuery.png" alt="BigQuery">
+                        </span>
+                        <h3>BigQuery</h3>
+                        <p>Utilize BigQuery’s serverless architecture for scalable analytics. Automate data ingestion
+                            and transformation using scheduled queries and Dataflow. Design optimized BigQuery datasets
+                            and tables for efficient querying.</p>
+                    </div>
+                    <!-- Card 8: Tableau -->
+                    <div class="swiper-slide glass-card">
+                        <span class="card-icon" style="background: rgba(48,93,222,0.2);">
+                            <img src="images/Tableau.png" alt="Tableau">
+                        </span>
+                        <h3>Tableau</h3>
+                        <p>Build interactive dashboards that provide actionable insights. Connect Tableau with databases
+                            like Oracle, BigQuery and Snowflake. Leverage Tableau Server/Cloud for centralized data
+                            access and collaboration.</p>
+                    </div>
+                    <!-- Card 9: Snowflake -->
+                    <div class="swiper-slide glass-card">
+                        <span class="card-icon" style="background: rgba(255,83,84,0.2);">
+                            <img src="images/Snowflake.png" alt="Snowflake">
+                        </span>
+                        <h3>Snowflake</h3>
+                        <p>Utilize Snowflake’s cloud‑native scalability for high‑performance analytics. Automate data
+                            pipeline workflows using Snowflake Tasks and Streams. Optimize Snowflake queries with
+                            clustering and materialized views.</p>
+                    </div>
+                    <!-- Card 10: PySpark -->
+                    <div class="swiper-slide glass-card">
+                        <span class="card-icon" style="background: rgba(158,237,82,0.2);">
+                            <img src="images/PySpark.png" alt="PySpark">
+                        </span>
+                        <h3>PySpark</h3>
+                        <p>Optimize Spark jobs with partitioning, caching, and efficient transformations. Integrate
+                            PySpark with cloud storage, data lakes and databases for large‑scale analytics.</p>
+                    </div>
+                    <!-- Card 11: R -->
+                    <div class="swiper-slide glass-card">
+                        <span class="card-icon" style="background: rgba(240,225,13,0.2);">
+                            <img src="images/R.png" alt="R">
+                        </span>
+                        <h3>R</h3>
+                        <p>Automate data cleaning and transformation using R scripts and tidyverse packages. Build
+                            statistical models and visualizations with ggplot2 and Shiny.</p>
+                    </div>
+                    <!-- Card 12: Databricks -->
+                    <div class="swiper-slide glass-card">
+                        <span class="card-icon" style="background: rgba(255,140,96,0.2);">
+                            <img src="images/Databricks.png" alt="Databricks">
+                        </span>
+                        <h3>Databricks</h3>
+                        <p>Optimize Spark queries for large‑scale data processing and analytics. Connect Databricks with
+                            cloud storage and data lakes for unified data management.</p>
+                    </div>
+                    <!-- Card 13: Machine Learning -->
+                    <div class="swiper-slide glass-card">
+                        <span class="card-icon" style="background: rgba(48,93,222,0.2);">
+                            <img src="images/MachineLearning.png" alt="Machine Learning">
+                        </span>
+                        <h3>Machine Learning</h3>
+                        <p>Automate data preprocessing and feature engineering using scikit‑learn, TensorFlow. Optimize
+                            model training with hyperparameter tuning (GridSearchCV, Optuna). Integrate ML models into
+                            production pipelines.</p>
+                    </div>
+                    <!-- Card 14: LLM -->
+                    <div class="swiper-slide glass-card">
+                        <span class="card-icon" style="background: rgba(255,83,84,0.2);">
+                            <img src="images/LLM.png" alt="LLM">
+                        </span>
+                        <h3>LLM</h3>
+                        <p>Automate text preprocessing and tokenization using Hugging Face Transformers, NLTK. Fine‑tune
+                            LLMs like BERT, XLM‑RoBERTa on domain‑specific datasets for improved performance.</p>
+                    </div>
+                </div>
+                <!-- Optional navigation -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </section>
+
+        <!-- 4. Properties Showcase (unchanged) -->
+        <!-- 4. Publications Showcase -->
+        <section id="publications" class="properties">
+            <div class="container">
+                <h2>Publications</h2>
+                <div class="publications-grid">
+                    <!-- Card 1: Twitter Airlines Sentiment Analysis -->
+                    <div class="publication-card">
+                        <div class="publication-content">
+                            <h3>Twitter Airlines Sentiment Analysis</h3>
+                            <p class="publication-meta">International Journal of Scientific Research in Computer Science
+                                · Apr 22, 2023</p>
+                            <a href="https://ijsrcseit.com/CSEIT2390266" class="btn-publication" target="_blank"
+                                rel="noopener noreferrer">
+                                Click Here <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Card 2: Using BI Visualization to Track Progress in Latin American Countries -->
+                    <div class="publication-card">
+                        <div class="publication-content">
+                            <h3>Using BI Visualization to Track Progress in Latin American Countries for the Latin
+                                American Government</h3>
+                            <p class="publication-meta">Strad Research, UGC Care Group 2 Journal · Apr 06, 2024</p>
+                            <a href="https://stradresearch.org/index.php/volume-11-issue-4-2024" class="btn-publication"
+                                target="_blank" rel="noopener noreferrer">
+                                Click Here <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Team Section - Project Cards (Glass Fluid Design) -->
+        <section id="projects" class="team">
+            <div class="container">
+                <h2>Get to know me 😉</h2>
+                <!-- Glass fluid container -->
+                <div class="glass-fluid-container">
+                    <!-- Animated background elements (fluid effect)-->
+                    <div class="fluid-bg fluid-bg-1"></div>
+                    <div class="fluid-bg fluid-bg-2"></div>
+                    <div class="fluid-bg fluid-bg-3"></div>
+
+                    <!-- Projects grid (8 cards) -->
+                    <div class="projects-grid">
+                        <!-- Card 1: AIRBNB ROOM RENTAL ANALYSIS -->
+                        <div class="project-card">
+                            <a href="airbnb.html" style="text-decoration: none; color: inherit;">
+                                <h3>AIRBNB ROOM RENTAL ANALYSIS</h3>
+                                <p class="project-domain">Domain: REAL ESTATE &amp; E-COMMERCE</p>
+                                <p class="project-tools">Tools: Power BI, Excel</p>
+                                <p class="project-chronology">Chronology: June 2023 - July 2023</p>
+                                <p class="project-summary">Airbnb is a global online marketplace that connects people
+                                    who are looking to rent out their homes, apartments or other properties with people
+                                    who are looking for a place to stay.....</p>
+                            </a>
+                            <a href="airbnb.html" class="btn-project">Click Here <i class="fas fa-arrow-right"></i></a>
+                        </div>
+
+                        <!-- Card 2: SDG ANALYSIS LATIN-AMERICAN GOVERNMENT -->
+                        <div class="project-card">
+                            <a href="vsfg.html" style="text-decoration: none; color: inherit;">
+                                <h3>SDG ANALYSIS LATIN-AMERICAN GOVERNMENT</h3>
+                                <p class="project-domain">Domain: SOCIAL &amp; ECONOMIC DEVELOPMENT / GOVERNMENT</p>
+                                <p class="project-tools">Tools: Power BI, Excel</p>
+                                <p class="project-chronology">Chronology: April 2023 - May 2023</p>
+                                <p class="project-summary">The Sustainable Development Goals (SDGs) are a set of 17
+                                    goals that the world has agreed to achieve by 2030. These goals aim to solve
+                                    problems like poverty, hunger, inequality and climate change....</p>
+                            </a>
+                            <a href="vsfg.html" class="btn-project">Click Here <i class="fas fa-arrow-right"></i></a>
+                        </div>
+
+                        <!-- Card 3: SHOPCLUES CUSTOMER ANALYSIS -->
+                        <div class="project-card">
+                            <a href="shopclues_ecommerce.html" style="text-decoration: none; color: inherit;">
+                                <h3>SHOPCLUES CUSTOMER ANALYSIS</h3>
+                                <p class="project-domain">Domain: E-COMMERCE</p>
+                                <p class="project-tools">Tools: SQL, Power BI</p>
+                                <p class="project-chronology">Chronology: July 2023 - August 2023</p>
+                                <p class="project-summary">ShopClues is a leading online marketplace in India that
+                                    offers a wide variety of products to customers across the country.....</p>
+                            </a>
+                            <a href="shopclues_ecommerce.html" class="btn-project">Click Here <i
+                                    class="fas fa-arrow-right"></i></a>
+                        </div>
+
+                        <!-- Card 4: U.S. MASS SHOOTING ANALYSIS -->
+                        <div class="project-card">
+                            <a href="mass_shooting.html" style="text-decoration: none; color: inherit;">
+                                <h3>U.S. MASS SHOOTING ANALYSIS</h3>
+                                <p class="project-domain">Domain: GOVERNMENT / CRIME</p>
+                                <p class="project-tools">Tools: SQL, Power BI</p>
+                                <p class="project-chronology">Chronology: August 2023 - September 2023</p>
+                                <p class="project-summary">Mass shootings in the United States have become a pressing
+                                    and deeply concerning issue, capturing the attention of the nation and the world....
+                                </p>
+                            </a>
+                            <a href="mass_shooting.html" class="btn-project">Click Here <i
+                                    class="fas fa-arrow-right"></i></a>
+                        </div>
+
+                        <!-- Card 5: Capital Bike Sharing Prediction -->
+                        <div class="project-card">
+                            <a href="bike_sharing.html" style="text-decoration: none; color: inherit;">
+                                <h3>Capital Bike Sharing Prediction</h3>
+                                <p class="project-domain">Domain: TRANSPORTATION</p>
+                                <p class="project-tools">Tools: Pyspark, Databricks</p>
+                                <p class="project-chronology">Chronology: September 2024 - October 2024</p>
+                                <p class="project-summary">The rise of urban cycling has led to a growing reliance on
+                                    bike-sharing services as sustainable alternatives to traditional transport modes....
+                                </p>
+                            </a>
+                            <a href="bike_sharing.html" class="btn-project">Click Here <i
+                                    class="fas fa-arrow-right"></i></a>
+                        </div>
+
+                        <!-- Card 6: Rice Image Classification -->
+                        <div class="project-card">
+                            <a href="rice_classification.html" style="text-decoration: none; color: inherit;">
+                                <h3>Rice Image Classification</h3>
+                                <p class="project-domain">Domain: SUPPLY CHAIN</p>
+                                <p class="project-tools">Tools: Deep Learning</p>
+                                <p class="project-chronology">Chronology: January 2025 - February 2025</p>
+                                <p class="project-summary">Rice is an important food eaten all over the world. Sorting
+                                    and classifying rice is very important in farming and supply chains....</p>
+                            </a>
+                            <a href="rice_classification.html" class="btn-project">Click Here <i
+                                    class="fas fa-arrow-right"></i></a>
+                        </div>
+
+                        <!-- Card 7: Hotel Reviews Prediction (LLM + ML) -->
+                        <div class="project-card">
+                            <a href="reviews_prediction.html" style="text-decoration: none; color: inherit;">
+                                <h3>Hotel Reviews Prediction (LLM + ML)</h3>
+                                <p class="project-domain">Domain: TRAVEL &amp; HOSPITALITY</p>
+                                <p class="project-tools">Tools: Python, LLM, Machine Learning</p>
+                                <p class="project-chronology">Chronology: March 2025 - May 2025</p>
+                                <p class="project-summary">Hotel reviews are a critical voice of the customer in the
+                                    hospitality industry directly influencing booking decisions and business
+                                    reputation.....</p>
+                            </a>
+                            <a href="reviews_prediction.html" class="btn-project">Click Here <i
+                                    class="fas fa-arrow-right"></i></a>
+                        </div>
+
+                        <!-- Card 8: Automation of Regulatory Statistical Reporting -->
+                        <div class="project-card">
+                            <a href="regulatory_automation.html" style="text-decoration: none; color: inherit;">
+                                <h3>Automation of Regulatory Statistical Reporting</h3>
+                                <p class="project-domain">Domain: FINTECH</p>
+                                <p class="project-tools">Tools: Snowflake, SQL, Python, Metabase, Git, Airflow, DBT</p>
+                                <p class="project-chronology">Chronology: Oct 2025 - Nov 2025</p>
+                                <p class="project-summary">Qonto is a leading European fintech company that provides
+                                    innovative payment solutions and financial services to businesses across multiple
+                                    countries.....</p>
+                            </a>
+                            <a href="regulatory_automation.html" class="btn-project">Click Here <i
+                                    class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. Contact / Where I can be reached -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2 class="section-title left">Where I can be reached</h2>
+                <div class="contact-grid">
+                    <a href="http://www.linkedin.com/in/ameypathare" target="_blank" rel="noopener noreferrer"
+                        class="contact-item">
+                        <img src="images/linkedin.png" alt="LinkedIn">
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="https://github.com/ameypathare" target="_blank" rel="noopener noreferrer" class="contact-item">
+                        <img src="images/Github.png" alt="GitHub">
+                        <span>GitHub</span>
+                    </a>
+                    <a href="https://drive.google.com/drive/folders/1sDqOAx0NtQu09XFuQ1mSnXfOxsGKCOWb?usp=sharing"
+                        target="_blank" rel="noopener noreferrer" class="contact-item">
+                        <img src="images/Resume.png" alt="CV">
+                        <span>CV</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. Tagline with GIF (black background) -->
+        <section class="tagline-gif-section">
+            <div class="container tagline-gif-container">
+                <div class="tagline-text">
+                    <span class="stat-number">Your Data,<br>My Analysis,<br>Our Advantage</span>
+                </div>
+
+                <div class="tagline-gif">
+                    <img src="images/animation.gif" alt="Data Analysis GIF">
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="copyright-text">
+                    <p>©2026 Amey's portfolio. All rights reserved.<br>Made by Amey with ❤️</p>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+
+</html>
